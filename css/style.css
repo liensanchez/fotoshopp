@@ -5,6 +5,7 @@
 body{
 background-color: black;
 }
+/*==============================================HEADER==============================================================================*/
 .logo{
   background-image: url("https://i.ibb.co/yFYnWvK/fotoshopp.jpg");
   width: 312px;
@@ -20,7 +21,8 @@ background-color: black;
   left: 17px;
   right: 17px;
   top: 79px;
-  border: 3px solid #FA0303;
+  border:  solid #FA0303;
+  
 }
 .carritoFondo{
   display: flex;
@@ -41,12 +43,27 @@ background-color: black;
   top: 18px;
   right: 20px;
 }
+
+/*==============================================NEGOCIO IMAGENES====================================================================*/
+.negocio{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+.local{
+  height: 399px;
+  width: 378px;
+  margin-left: 1px;
+  margin-right: 1px;
+}
+
+/*==============================================PRODUCTOS===========================================================================*/
 .productos{
   display: flex;
   justify-content: space-around;
 }
 .img{
-  margin-top: 243px;
+  margin-top: 20px;
   width: 294px;
   height: 312px;
 }
