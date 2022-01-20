@@ -66,3 +66,17 @@ ingresar.addEventListener('click', function(){
 
 })
 
+//creacion de usuario cmo objeto
+class Usuario{
+  constructor(nombre, apellido, numero){
+    this.nombre = nombre;
+    this.apellido = apellido;
+    this.numero = numero;
+  }
+}
+//nuevo usuario
+const usuario1 = new Usuario(localStorage.nombre, localStorage.apellido, localStorage.telefono);
+
+//array de usuarios
+const listaCliente = [];
+listaCliente.push(Usuario);

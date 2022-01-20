@@ -76,6 +76,7 @@ background-color: black;
 .titulo{
   display: flex;
   justify-content: center;
+  font-family: "Londrina Solid";
 }
 
 
