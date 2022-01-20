@@ -77,3 +77,30 @@ background-color: black;
   display: flex;
   justify-content: center;
 }
+
+
+/*===============================================LOGIN===============================================================================*/
+.login{
+  display: flex;
+  justify-content: center;
+}
+.loginBox{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid 2px white;
+  width: 320px;
+  height: 380px;
+}
+.boton{
+  width: 80px;
+  height: 20px;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
