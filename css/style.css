@@ -130,11 +130,7 @@ form{
 @media only screen and (min-width:
 1024px) {
   body{
-<<<<<<< HEAD
     background-color: royalblue;
-=======
-    background-color: blue;
->>>>>>> 2fe67d074896f8fc98ae272b128222c61a985f80
   }
 /*==============================================HEADER==============================================================================*/
   .logo{
