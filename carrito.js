@@ -1,3 +1,7 @@
+//REVISAMOS EL DOM 
+$(document).ready(function(){
+  console.log("domReady")
+});
 
 //registro de un nuevo cliente
 let registrarse = document.getElementById('registrarse');
