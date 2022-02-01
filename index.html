@@ -23,15 +23,17 @@
   </section>
 
   <section class="productos">
-    <a href="./pages/"><article class="card">
+    <article class="card">
       <img src="./media/accesorios.jpg" alt="" class="img">
         <h2 class="titulo">Accesorios</h2>
-    </article></a>
+    </article>
     <article class="card">
-      <img src="./media/marcos.jpg" alt="" class="img">
-      <div class="fondoTitulo">
-        <h2 class="titulo">Impresion de fotografias</h2>
-      </div>
+      <a href="#impresionFotografia" id="linkImpresionFotografia">
+        <img src="./media/marcos.jpg" alt="" class="img">
+        <div class="fondoTitulo">
+          <button id="buttonImpresionFotografia"> Impresion de fotografias</button>
+        </div>
+      </a>
     </article>
     <article class="card">
       <img src="./media/album.jpg" alt="" class="img">
@@ -42,12 +44,19 @@
   </section>
 
 
-  <section class="mercaderia">
+  <section id="impresionFotografia">
     <article class="promo">
-      
+      <img src="./media/promos/10x15.jpeg" alt="" class="promoImg">
+      <button id="quieroPromo">Quiero esta promo!</button>
     </article>
-    <article class="promo"></article>
-    <article class="promo"></article>
+    <article class="promo">
+      <img src="./media/promos/13x18.jpeg" alt="" class="promoImg">
+      <button id="quieroPromo">Quiero esta promo!</button>
+    </article>
+    <article class="promo">
+      <img src="./media/promos/15x20.jpeg" alt="" class="promoImg">
+      <button id="quieroPromo">Quiero esta promo!</button>
+    </article>
   </section>
 
 
@@ -62,7 +71,7 @@
 
 
 
-
-  <script src="app.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="./script/app.js"></script>
 </body>
 </html>
