@@ -36,14 +36,14 @@ background-color: black;
   background-color: white;
   border-radius: 50px;
 }
-.carrito{
-  display: flex;
-  flex-direction: row-reverse;
-  position: absolute;
-  font-size: 15px;
-  top: 5px;
-  right: 7px;
+.fas{
+  font-size: 60px;
 }
+.fa-shopping-cart{
+  font-size: 18px;
+  margin-right: 5px;
+  margin-top: 4px;
+}  
 
 /*==============================================NEGOCIO IMAGENES====================================================================*/
 .negocio{
@@ -99,6 +99,11 @@ background-color: black;
   justify-content: center;
   font-family: "Londrina Solid";
 }
+
+/*===============================================MERCADERIA==========================================================================*/
+#impresionFotografia{
+    display: none;    
+  }
 /*===============================================LOGIN===============================================================================*/
 .login{
   display: flex;
@@ -130,7 +135,6 @@ form{
 {
   /*==============================================HEADER==============================================================================*/
   .logo{
-    
     margin-left: 17px;
     margin-top: 18px;
     border-radius: 50px;
@@ -156,14 +160,14 @@ form{
     background-color: white;
     border-radius: 50px;
   }
-  .carrito{
-    display: flex;
-    flex-direction: row-reverse;
-    position: absolute;
-    font-size: 45px;
-    top: 10px;
-    right: 13px;
+  .fas{
+    font-size: 60px;
   }
+  .fa-shopping-cart{
+    font-size: 40px;
+    margin-right: 12px;
+    margin-top: 10px;
+  }  
   
   /*==============================================NEGOCIO IMAGENES====================================================================*/
   .negocio{
@@ -219,6 +223,11 @@ form{
     justify-content: center;
     font-family: "Londrina Solid";
   }
+
+  /*===============================================MERCADERIA==========================================================================*/
+    #impresionFotografia{
+      display: none;    
+    }
   /*===============================================LOGIN===============================================================================*/
   .login{
     display: flex;
@@ -286,14 +295,7 @@ form{
     background-color: white;
     border-radius: 50px;
   }
-  .carrito{
-    display: flex;
-    flex-direction: row-reverse;
-    position: absolute;
-    font-size: 30px;
-    top: 18px;
-    right: 20px;
-  }
+  
 
   /*==============================================NEGOCIO IMAGENES====================================================================*/
   .negocio{
@@ -314,6 +316,9 @@ form{
     justify-content: space-around;
   }
   .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     margin-top: 50px;
     width: 268px;
     height: 296px;
@@ -322,6 +327,7 @@ form{
     box-shadow: 0.3em 0.3em 0.7em #00000015;
     transition: border 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     border: rgb(250, 250, 250) 0.2em solid;
+   
     
   }
   .card:hover {
@@ -340,7 +346,7 @@ form{
     width: 268px;
     height: 266px;
   }
-  .titulo{
+  .botonImpresion{
     display: flex;
     justify-content: center;
     font-family: "Londrina Solid";
@@ -348,9 +354,7 @@ form{
 
   /*===============================================MERCADERIA==========================================================================*/
   #impresionFotografia{
-    display: none;
-   
-    
+    display: none;    
   }
   .promo{
     margin-top: 50px;
@@ -370,6 +374,10 @@ form{
     width: 260px;
     height: 320px;
     border-radius: 20px;
+  }
+  #buttonImpresionFotografia{
+    display: flex;
+    justify-content: center;
   }
   .quieroPromo{
     border-radius: 20px;

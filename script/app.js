@@ -4,6 +4,8 @@ $("#buttonImpresionFotografia").click(function (e) {
   $("#impresionFotografia").show();
   $("#impresionFotografia").css({
     "display":"flex",
-    "flex-direction":"row"
+    "flex-direction":"row",
+    "justify-content":"space-around",
+    "flex-wrap":"wrap"
   })
 });
