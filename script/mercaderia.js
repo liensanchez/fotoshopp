@@ -1,4 +1,19 @@
 
+//hacemos un array de los productos
+const productos = [ {id:1, producto:"foto10x15",imagen:"../media/promos/10x15.jpg" , precio:"150"} ];
+
+let carrito = [];
+
+const moneda ='$';
+
+const DOMelementos = $("#impresionFotografia");
+
+const DOMcarrito = $("#carrito");
+
+const DOMtotal = $("#total");
+
+const botonVaciarDOM = $("#boton-vaciar");
+
 //registramos el clik
 $("#buttonImpresionFotografia").click(function (e) { 
 
@@ -16,4 +31,6 @@ $("#buttonImpresionFotografia").click(function (e) {
     "flex-wrap":"wrap"
   })
 });
+
+
 
