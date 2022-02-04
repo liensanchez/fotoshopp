@@ -18,13 +18,13 @@ $("#buttonImpresionFotografia").click(function (e) {
 });
 
 
-
 //hacemos un array de los productos
 const productos =  [{id:1, producto:"foto10x15", precio:"150"},
                     {id:2, producto:"foto13x18", precio:"180"},
                     {id:3, producto:"foto15x20", precio:"200"},
                     {id:4, producto:"fotoCarnet", precio:"150"},
                     {id:5, producto:"fotoPolaroid", precio:"150"}];
+
 
 //registramos click del boton
 $("#quieroPromo10x15").click(function (e) { 
@@ -115,11 +115,10 @@ $("#botonModal").click(function (e) {
   //modificamos el css del modal
   $("#modalCarrito").css({
     "display":"flex",
+    "flex-direction":"colum",
     "align-content": "center",
     "justify-content": "center"
   })
   
 });
-
-
 
