@@ -20,10 +20,10 @@ $("#buttonImpresionFotografia").click(function (e) {
 
 //hacemos un array de los productos
 const productos =  [{id:1, producto:"foto10x15", precio:150},
-                    {id:2, producto:"foto13x18", precio:"180"},
-                    {id:3, producto:"foto15x20", precio:"200"},
-                    {id:4, producto:"fotoCarnet", precio:"150"},
-                    {id:5, producto:"fotoPolaroid", precio:"150"}];
+                    {id:2, producto:"foto13x18", precio:180},
+                    {id:3, producto:"foto15x20", precio:200},
+                    {id:4, producto:"fotoCarnet", precio:150},
+                    {id:5, producto:"fotoPolaroid", precio:150}];
 
 //carrito array para sumar los productos
 const carrito=[];
@@ -63,6 +63,9 @@ $("#quieroPromo13x18").click(function (e) {
   //evitamos que recargue
   e.preventDefault();
   
+  //agregamos los precios a un carrito
+  carrito.push(productos[1].precio);
+    
   //agregamos el producto al modal con el precio
   $("#modalContenido").append(
     
@@ -79,6 +82,9 @@ $("#quieroPromo15x20").click(function (e) {
   //evitamos que recargue
   e.preventDefault();
   
+  //agregamos los precios a un carrito
+  carrito.push(productos[2].precio);
+    
   //agregamos el producto al modal con el precio
   $("#modalContenido").append(
     
@@ -95,6 +101,9 @@ $("#quieroPromoCarnet").click(function (e) {
   //evitamos que recargue
   e.preventDefault();
   
+  //agregamos los precios a un carrito
+  carrito.push(productos[3].precio);
+    
   //agregamos el producto al modal con el precio
   $("#modalContenido").append(
     
@@ -111,6 +120,9 @@ $("#quieroPromoPolaroid").click(function (e) {
   //evitamos que recargue
   e.preventDefault();
   
+  //agregamos los precios a un carrito
+  carrito.push(productos[4].precio);
+    
   //agregamos el producto al modal con el precio
   $("#modalContenido").append(
       
