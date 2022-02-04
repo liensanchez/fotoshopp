@@ -327,8 +327,6 @@ form{
     box-shadow: 0.3em 0.3em 0.7em #00000015;
     transition: border 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     border: rgb(250, 250, 250) 0.2em solid;
-   
-    
   }
   .card:hover {
     border: #006fff 0.2em solid;
@@ -350,6 +348,30 @@ form{
     display: flex;
     justify-content: center;
     font-family: "Londrina Solid";
+  }
+  /*===============================================CARRO==========================================================================*/
+  .carro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .botonModal{
+    width: 200px;
+  }
+  .modal{
+    display: none;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: auto;
+    overflow: auto;
+    background-color: antiquewhite;
+  }
+  .modalContenido{
+    background-color: #fefefe;
+    border: 1px solid #888;
+    width: auto;
   }
 
   /*===============================================MERCADERIA==========================================================================*/

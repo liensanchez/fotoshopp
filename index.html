@@ -8,7 +8,7 @@
   <script src="https://kit.fontawesome.com/d35b224244.js" crossorigin="anonymous"></script>
   <title>Fotoshopp</title>
 </head>
-<body>
+<body >
   <header>
       <img src="./media/fotoshopp.jpg" alt="" class="logo">
     <div class="separador"></div>
@@ -20,6 +20,16 @@
     <img src="./media/local2.jpg" alt="" class="local">
     <img src="./media/local3.jpg" alt="" class="local">
     <img src="./media/local4.jpg" alt="" class="local">
+  </section>
+
+  <section class="carro">
+    <button id="botonModal" class="botonModal">Ver Carrito</button>
+    <div id="modalCarrito" class="modal">
+      <div id="modalContenido" class="modalContenido">
+
+      </div>
+    <button id="sumarProductos">Sumar Productos</button>
+    </div>
   </section>
 
   <section class="productos">
@@ -39,15 +49,11 @@
     </article>
   </section>
 
-  <section class="carro">
-    <h2>Carrito</h2>
-    <ul id="carrito"></ul>
-    <p id="total"></p>
-    <button id="boton-vaciar">Vaciar</button>
-  </section>
-
-
   <section id="impresionFotografia">
+    <article class="promo">
+      <img src="./media/promos/10x15.jpg" alt="" class="promoImg">
+      <button id="quieroPromo10x15">Quiero una foto!</button>
+    </article>
     <article class="promo">
       <img src="./media/promos/13x18.jpg" alt="" class="promoImg">
       <button id="quieroPromo13x18">Quiero esta promo!</button>
