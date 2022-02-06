@@ -20,7 +20,7 @@ $("#buttonImpresionFotografia").click(function (e) {
 
 //hacemos un array de los productos
 const productos =  [{id:1, producto:"foto10x15", precio:150, texto: "Quiero una promo 10x15"},
-                    {id:2, producto:"foto13x18", precio:180, tecto: "que onda loquita"},
+                    {id:2, producto:"foto13x18", precio:180, texto: "que onda loquita"},
                     {id:3, producto:"foto15x20", precio:200},
                     {id:4, producto:"fotoCarnet", precio:150},
                     {id:5, producto:"fotoPolaroid", precio:150}];
@@ -44,10 +44,7 @@ $("#sumarProductos").click(function (e) {
     <h2>${total}</h2>
     `
   );
-
-  //texto en variable para poder utilizarlo
-  let texto = (productos[0].texto);
-
+ 
   //lo guardamos en el local storge para poder insertarlo en wpp
   localStorage.setItem('suma', total);
 
@@ -71,6 +68,9 @@ $("#quieroPromo10x15").click(function (e) {
     <h2>${productos[0].precio}</h2>
     `
   );
+  
+   //texto en variable para poder utilizarlo
+   let texto = (productos[0].texto);
 });
 
 
@@ -90,6 +90,9 @@ $("#quieroPromo13x18").click(function (e) {
     <h2>${productos[1].precio}</h2>
     `
   );
+
+   //texto en variable para poder utilizarlo
+   let texto = (productos[1].texto);
 });
 
 
