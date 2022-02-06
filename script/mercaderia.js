@@ -19,7 +19,7 @@ $("#buttonImpresionFotografia").click(function (e) {
 
 
 //hacemos un array de los productos
-const productos =  [{id:1, producto:"foto10x15", precio:150},
+const productos =  [{id:1, producto:"foto10x15", precio:150, texto: "Quiero una promo 10x15"},
                     {id:2, producto:"foto13x18", precio:180},
                     {id:3, producto:"foto15x20", precio:200},
                     {id:4, producto:"fotoCarnet", precio:150},
@@ -28,15 +28,30 @@ const productos =  [{id:1, producto:"foto10x15", precio:150},
 //carrito array para sumar los productos
 const carrito=[];
 
-//boton sumar
+//boton sumar 
 $("#sumarProductos").click(function (e) { 
   e.preventDefault();
   
+  //funcion para sumar los productos del array carrito
   let total = carrito.reduce((a, b) => a + b, 0);
 
-  console.log(total);
-});
+  //mostramos el total
+  $("#modalContenido").append(
+    
+    `
+    <h2>${total}</h2>
+    `
+  );
 
+  //texto en variable para poder utilizarlo
+  let texto = (productos[0].texto);
+
+  //lo guardamos en el local storge para poder insertarlo en wpp
+  localStorage.setItem('suma', total);
+
+  //lo guardamos en el local storge para poder insertarlo en wpp
+  localStorage.setItem('texto', texto);
+});
 
 //registramos click del boton
 $("#quieroPromo10x15").click(function (e) { 
@@ -51,7 +66,7 @@ $("#quieroPromo10x15").click(function (e) {
   $("#modalContenido").append(
     
     `
-    <h2 id="elprecio">${productos[0].precio}</h2>
+    <h2>${productos[0].precio}</h2>
     `
   );
 });

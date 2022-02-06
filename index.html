@@ -12,7 +12,7 @@
   <header>
       <img src="./media/fotoshopp.jpg" alt="" class="logo">
     <div class="separador"></div>
-    <a href="./pages/sesionUsuario.html"><div class="carritoFondo"><i class="fas fa-shopping-cart"></i></div></a>
+    <a href="./pages/sesionUsuario.html"><div class="usuarioFondo"><i class="fas fa-users"></i></div></a>
   </header>
 
   <section class="negocio">
@@ -23,7 +23,7 @@
   </section>
 
   <section class="carro">
-    <button id="botonModal" class="botonModal">Ver Carrito</button>
+    <button id="botonModal" class="botonModal"><i class="fas fa-shopping-cart"></i></button>
     <div id="modalCarrito" class="modal">
       <div id="modalContenido" class="modalContenido">
 
@@ -78,8 +78,24 @@
 
 
 
-
-
+  <section class="clase14">
+    <form id="formulario" class="formulario">
+      <h1>Contacto por WhatsApp</h1>
+      <div class="box-input">
+          <input placeholder="Nombre" name="nombre" id="nombrews" type="text" required>
+          
+      </div>
+      <div class="box-input">
+          <input placeholder="Apellido" name="apellidos" id="apellidos" type="text" required>
+          
+      </div>
+      <div class="box-input">
+          <input placeholder="correo@ejemplo.com" name="email" id="emailws" type="email" required>
+          
+      </div>
+      <button id="sumbit">Enviar whatsapp</button>
+    </form>
+  </section>
 
 
 
@@ -87,5 +103,6 @@
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="script/mercaderia.js"></script>
+  <script src="./script/enviomjs.js"></script>
 </body>
 </html>
