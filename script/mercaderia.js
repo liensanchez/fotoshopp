@@ -29,6 +29,7 @@ const productos =  [{id:1, producto:"foto10x15", precio:150, texto: "Quiero una 
 //carrito array para sumar los productos
 const carrito=[];
 
+const texto=[];
 
 //boton sumar 
 $("#sumarProductos").click(function (e) { 
@@ -50,6 +51,7 @@ $("#sumarProductos").click(function (e) {
 
   //lo guardamos en el local storge para poder insertarlo en wpp
   localStorage.setItem('texto', texto);
+
 });
 
 //registramos click del boton
@@ -69,10 +71,15 @@ $("#quieroPromo10x15").click(function (e) {
     `
   );
   
-   //texto en variable para poder utilizarlo
-   let texto = (productos[0].texto);
 });
 
+//registramos un solo click para que nos agregue una sola vez el texto deseado
+$( "#quieroPromo10x15" ).one( "click", function( event ) {
+
+  //pusheamos el texto a un array que luego sera utilizado en whatsapp
+  texto.push(productos[0].texto);
+
+});
 
 //registramos click del boton 
 $("#quieroPromo13x18").click(function (e) { 
@@ -91,8 +98,14 @@ $("#quieroPromo13x18").click(function (e) {
     `
   );
 
-   //texto en variable para poder utilizarlo
-   let texto = (productos[1].texto);
+});
+
+//registramos un solo click para que nos agregue una sola vez el texto deseado
+$( "#quieroPromo10x15" ).one( "click", function( event ) {
+
+  //pusheamos el texto a un array que luego sera utilizado en whatsapp
+  texto.push(productos[1].texto);
+
 });
 
 
@@ -114,6 +127,14 @@ $("#quieroPromo15x20").click(function (e) {
   );
 });
 
+//registramos un solo click para que nos agregue una sola vez el texto deseado
+$( "#quieroPromo10x15" ).one( "click", function( event ) {
+
+  //pusheamos el texto a un array que luego sera utilizado en whatsapp
+  texto.push(productos[2].texto);
+
+});
+
 
 //registramos click del boton 
 $("#quieroPromoCarnet").click(function (e) { 
@@ -133,6 +154,14 @@ $("#quieroPromoCarnet").click(function (e) {
   );
 });
 
+//registramos un solo click para que nos agregue una sola vez el texto deseado
+$( "#quieroPromo10x15" ).one( "click", function( event ) {
+
+  //pusheamos el texto a un array que luego sera utilizado en whatsapp
+  texto.push(productos[3].texto);
+
+});
+
 
 //registramos click del boton 
 $("#quieroPromoPolaroid").click(function (e) { 
@@ -150,6 +179,14 @@ $("#quieroPromoPolaroid").click(function (e) {
     <h2>${productos[4].precio}</h2>
     `
   );
+});
+
+//registramos un solo click para que nos agregue una sola vez el texto deseado
+$( "#quieroPromo10x15" ).one( "click", function( event ) {
+
+  //pusheamos el texto a un array que luego sera utilizado en whatsapp
+  texto.push(productos[4].texto);
+
 });
 
 
