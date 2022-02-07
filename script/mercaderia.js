@@ -101,7 +101,7 @@ $("#quieroPromo13x18").click(function (e) {
 });
 
 //registramos un solo click para que nos agregue una sola vez el texto deseado
-$( "#quieroPromo10x15" ).one( "click", function( event ) {
+$( "#quieroPromo13x18" ).one( "click", function( event ) {
 
   //pusheamos el texto a un array que luego sera utilizado en whatsapp
   texto.push(productos[1].texto);
@@ -128,7 +128,7 @@ $("#quieroPromo15x20").click(function (e) {
 });
 
 //registramos un solo click para que nos agregue una sola vez el texto deseado
-$( "#quieroPromo10x15" ).one( "click", function( event ) {
+$( "#quieroPromo15x20" ).one( "click", function( event ) {
 
   //pusheamos el texto a un array que luego sera utilizado en whatsapp
   texto.push(productos[2].texto);
@@ -155,7 +155,7 @@ $("#quieroPromoCarnet").click(function (e) {
 });
 
 //registramos un solo click para que nos agregue una sola vez el texto deseado
-$( "#quieroPromo10x15" ).one( "click", function( event ) {
+$( "#quieroPromoCarnet" ).one( "click", function( event ) {
 
   //pusheamos el texto a un array que luego sera utilizado en whatsapp
   texto.push(productos[3].texto);
@@ -182,7 +182,7 @@ $("#quieroPromoPolaroid").click(function (e) {
 });
 
 //registramos un solo click para que nos agregue una sola vez el texto deseado
-$( "#quieroPromo10x15" ).one( "click", function( event ) {
+$( "#quieroPromoPolaroid" ).one( "click", function( event ) {
 
   //pusheamos el texto a un array que luego sera utilizado en whatsapp
   texto.push(productos[4].texto);
