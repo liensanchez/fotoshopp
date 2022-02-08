@@ -190,19 +190,4 @@ $( "#quieroPromoPolaroid" ).one( "click", function( event ) {
 });
 
 
-//modal
-$("#botonModal").click(function (e) { 
-
-  //evitamos que recargue la pagina
-  e.preventDefault();
-
-  //modificamos el css del modal
-  $("#modalCarrito").css({
-    "display":"flex",
-    "flex-direction":"colum",
-    "align-content": "center",
-    "justify-content": "center"
-  })
-  
-});
 
