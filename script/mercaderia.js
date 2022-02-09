@@ -18,42 +18,6 @@ $("#buttonImpresionFotografia").click(function (e) {
 });
 
 
-//hacemos un array de los productos
-const productos =  [{id:1, producto:"foto10x15", precio:150, texto: "Quiero una promo 10x15"},
-                    {id:2, producto:"foto13x18", precio:180, texto: "que onda loquita"},
-                    {id:3, producto:"foto15x20", precio:200},
-                    {id:4, producto:"fotoCarnet", precio:150},
-                    {id:5, producto:"fotoPolaroid", precio:150}];
-
-
-//carrito array para sumar los productos
-const carrito=[];
-
-const texto=[];
-
-//boton sumar 
-$("#sumarProductos").click(function (e) { 
-  e.preventDefault();
-  
-  //funcion para sumar los productos del array carrito
-  let total = carrito.reduce((a, b) => a + b, 0);
-
-  //mostramos el total
-  $("#modalContenido").append(
-    
-    `
-    <h2>${total}</h2>
-    `
-  );
- 
-  //lo guardamos en el local storge para poder insertarlo en wpp
-  localStorage.setItem('suma', total);
-
-  //lo guardamos en el local storge para poder insertarlo en wpp
-  localStorage.setItem('texto', texto);
-
-});
-
 //registramos click del boton
 $("#quieroPromo10x15").click(function (e) { 
 
@@ -64,7 +28,7 @@ $("#quieroPromo10x15").click(function (e) {
   carrito.push(productos[0].precio);
     
   //agregamos el producto al modal con el precio
-  $("#modalContenido").append(
+  $("#modalProductos").append(
     
     `
     <h2>${productos[0].precio}</h2>
@@ -91,7 +55,7 @@ $("#quieroPromo13x18").click(function (e) {
   carrito.push(productos[1].precio);
     
   //agregamos el producto al modal con el precio
-  $("#modalContenido").append(
+  $("#modalProductos").append(
     
     `
     <h2>${productos[1].precio}</h2>
@@ -119,7 +83,7 @@ $("#quieroPromo15x20").click(function (e) {
   carrito.push(productos[2].precio);
     
   //agregamos el producto al modal con el precio
-  $("#modalContenido").append(
+  $("#modalProductos").append(
     
     `
     <h2>${productos[2].precio}</h2>
@@ -146,7 +110,7 @@ $("#quieroPromoCarnet").click(function (e) {
   carrito.push(productos[3].precio);
     
   //agregamos el producto al modal con el precio
-  $("#modalContenido").append(
+  $("#modalProductos").append(
     
     `
     <h2>${productos[3].precio}</h2>
@@ -173,7 +137,7 @@ $("#quieroPromoPolaroid").click(function (e) {
   carrito.push(productos[4].precio);
     
   //agregamos el producto al modal con el precio
-  $("#modalContenido").append(
+  $("#modalProductos").append(
       
     `
     <h2>${productos[4].precio}</h2>

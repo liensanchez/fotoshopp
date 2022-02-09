@@ -29,9 +29,8 @@ const urlMobile = 'whatsapp://';
 const telefono = '+54 9 2612704041';
 
 
-
 //CHEQUEAMOS EL CLICK DEL BOTON DE ENVIAR WHATSAPP
-$("#sumbit").click(function (e) { 
+$("#enviarMensaje").click(function (e) { 
 
   //EVITAMOS QUE RECARGE LA PAGINA
   e.preventDefault() 
