@@ -283,12 +283,26 @@ form{
     position: absolute;
     width: 69px;
     height: 64px;
-    right: 22px;
+    right: 140px;
     top: 8px;
     background-color: white;
     border-radius: 50px;
   }
-  
+  .botonCarrito{
+    display: flex;
+    flex-direction: row-reverse;
+    position: absolute;
+    width: 140px;
+    height: 64px;
+    right: 1px;
+    top: 8px;
+    background-color: white;
+    border-radius: 50px;
+  }
+  .bolsa{
+    font-size: 140px;
+    color: #FA0303;
+  }
 
   /*==============================================NEGOCIO IMAGENES====================================================================*/
   .negocio{
@@ -344,11 +358,7 @@ form{
   }
   /*===============================================CARRO==========================================================================*/
  
-  .carrito{
-    display: flex;
-    justify-content: center;
-    
-  }
+  
   .modal {
     display: none; 
     position: fixed; 

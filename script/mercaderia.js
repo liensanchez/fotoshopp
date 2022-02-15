@@ -21,7 +21,7 @@ $("#buttonImpresionFotografia").click(function (e) {
 //usar el JSON de mercaderia
 const URLproductos="./datos/productos.json"
 
-//registramos click del boton
+//registramos click del boton en la promo
 $("#quieroPromo10x15").click(function (e) { 
 
   //evitamos que recargue
@@ -41,9 +41,32 @@ $("#quieroPromo10x15").click(function (e) {
     $("#modalProductos").append(
       
       `
-      <h2>Una promo 10x15$${valor}</h2>
+      <h2 id="precioModal">Una promo 10x15$${valor}</h2> <button id="quitarProducto" style= "margin-left:50px;"><i class="fas fa-times" style="font-size:12px;"></i></button> 
+      
       `
     );
+
+
+    //funcion para sumar los productos del array carrito
+    let total = carrito.reduce((a, b) => a + b, 0);
+
+    //retiramos el numero anterior
+    $(".precioFinal").remove();
+    
+    //mostramos el total arriba en el carrito
+    $("#precioDeSuma").append(
+    
+    `
+    <h2 class="precioFinal" 
+    style="margin-top:15px;
+          margin-right:10px;">
+    $${total}
+    </h2>
+    `
+    );
+
+    
+    
   })
 
   
@@ -64,6 +87,7 @@ $( "#quieroPromo10x15" ).one( "click", function( event ) {
   })
 
 });
+
 
 
 

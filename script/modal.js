@@ -13,11 +13,22 @@ $("#botonModal").click(function () {
 //lo ocultamos con el click en la x
 $(".cerrar").click(function () { 
 
+  //modificamos el css
   $("#modalCarrito").css({
     "display":"none"
   })
   
 });
+
+//boton de retirar producto
+$("#quitarPoducto").click(function () { 
+
+  
+  $("#modalProductos").remove("#precioModal");
+
+});
+
+
 
 
 //carrito array para sumar los productos
@@ -43,6 +54,7 @@ $("#sumarProductos").click(function (e) {
     <h2>Total:$${total}</h2>
     `
   );
+  
  
   //lo guardamos en el local storge para poder insertarlo en wpp
   localStorage.setItem('suma', total);
@@ -51,8 +63,13 @@ $("#sumarProductos").click(function (e) {
   localStorage.setItem('texto', texto);
 });
 
+//creamos el formulario para datos que necesitan en el comercio
 $("#enviarPedido").click(function (e) { 
+
+  //evitamos q recargue
   e.preventDefault();
+
+  //le damos estilo
   $("#formulario").css({
     "display" : "block"
   })
