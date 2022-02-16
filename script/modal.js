@@ -20,17 +20,6 @@ $(".cerrar").click(function () {
   
 });
 
-//boton de retirar producto
-$("#quitarPoducto").click(function () { 
-
-  
-  $("#modalProductos").remove("#precioModal");
-
-});
-
-
-
-
 //carrito array para sumar los productos
 const carrito=[];
 
@@ -47,14 +36,16 @@ $("#sumarProductos").click(function (e) {
   //funcion para sumar los productos del array carrito
   let total = carrito.reduce((a, b) => a + b, 0);
 
+  //removemos el resultado mostrado con anterioridad
+    $("#totalModal").remove();
+
   //mostramos el total
   $("#modalContenido").append(
     
     `
-    <h2>Total:$${total}</h2>
+    <h2 id="totalModal">Total:$${total}</h2>
     `
   );
-  
  
   //lo guardamos en el local storge para poder insertarlo en wpp
   localStorage.setItem('suma', total);
