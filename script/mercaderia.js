@@ -79,7 +79,8 @@ $("#quieroPromo10x15").one( "click", function (e) {
       //mostramos el precio en la bolsa arriba a la derecha
         //retiramos el numero anterior
         $("#precioDeSuma").remove();
-            //mostramos el total arriba en la bolsita
+
+          //mostramos el total arriba en la bolsita
         $("#precioDeSuma").append(
     
         `
