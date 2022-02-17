@@ -21,6 +21,7 @@ $("#buttonImpresionFotografia").click(function (e) {
 //usar el JSON de mercaderia
 const URLproductos="./datos/productos.json"
 
+
 //registramos click del boton en la promo 10x15
 $("#quieroPromo10x15").one( "click", function (e) { 
 
@@ -98,6 +99,7 @@ $("#quieroPromo10x15").one( "click", function (e) {
   
 });
 
+
 //registramos un solo click para que nos agregue una sola vez el texto deseado
 $( "#quieroPromo10x15" ).one( "click", function( event ) {
 
@@ -112,6 +114,7 @@ $( "#quieroPromo10x15" ).one( "click", function( event ) {
   })
 
 });
+
 
 //registramos click del boton en la promo 10x15
 $("#quieroPromo13x18").one( "click", function (e) { 
@@ -189,6 +192,7 @@ $("#quieroPromo13x18").one( "click", function (e) {
   })
   
 });
+
 
 //registramos un solo click para que nos agregue una sola vez el texto deseado
 $( "#quieroPromo13x18" ).one( "click", function( event ) {
