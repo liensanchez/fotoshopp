@@ -23,7 +23,7 @@ const URLproductos="./datos/productos.json"
 
 
 //registramos click del boton en la promo 10x15
-$("#quieroPromo10x15").one( "click", function (e) { 
+$("#quieroPromo10x15").click(function (e) { 
 
   //evitamos que recargue
   e.preventDefault();
@@ -60,40 +60,10 @@ $("#quieroPromo10x15").one( "click", function (e) {
     $("#modalProductos").append(
       
       `
-      <h2 id="precioModal">Una promo 10x15 $${valor}</h2> <button id="quitarProducto" style="height:auto">Eliminar Producto<i class="fas fa-times" style="font-size:10px;"></i></button> 
+      <h2 id="precioModal">Una promo 10x15 $${valor}</h2> 
       
       `
     );
-
-    //boton de retirar producto
-    $("#quitarProducto").click(function () { 
-
-      //quitamos el porducto del carrito
-      $("#precioModal").remove();
-
-      //quitamos el boton
-      $("#quitarProducto").remove();
-
-      //quitamos el producto del array
-      carrito.pop()
-
-      //mostramos el precio en la bolsa arriba a la derecha
-        //retiramos el numero anterior
-        $("#precioDeSuma").remove();
-
-          //mostramos el total arriba en la bolsita
-        $("#precioDeSuma").append(
-    
-        `
-        <h2 class="precioFinal" 
-                                style="margin-top:15px;
-                                margin-right:10px;">
-        $${total}
-        </h2>
-        `
-        );
-      
-    });
     
   })
   
@@ -101,7 +71,7 @@ $("#quieroPromo10x15").one( "click", function (e) {
 
 
 //registramos un solo click para que nos agregue una sola vez el texto deseado
-$( "#quieroPromo10x15" ).one( "click", function( event ) {
+$( "#quieroPromo10x15" ).click(function( event ) {
 
   //obtenemos el JSON
   $.get(URLproductos,function (response) {
@@ -117,7 +87,7 @@ $( "#quieroPromo10x15" ).one( "click", function( event ) {
 
 
 //registramos click del boton en la promo 10x15
-$("#quieroPromo13x18").one( "click", function (e) { 
+$("#quieroPromo13x18").click(function (e) { 
 
   //evitamos que recargue
   e.preventDefault();
@@ -154,40 +124,10 @@ $("#quieroPromo13x18").one( "click", function (e) {
     $("#modalProductos").append(
       
       `
-      <h2 id="precioModal">Una promo 13x18 $${valor}</h2> <button id="quitarProducto" style="height:auto">Eliminar Producto<i class="fas fa-times" style="font-size:10px;"></i></button> 
+      <h2 id="precioModal">Una promo 13x18 $${valor}</h2> 
       
       `
     );
-
-    //boton de retirar producto
-    $("#quitarProducto").click(function () { 
-
-      //quitamos el porducto del carrito
-      $("#precioModal").remove();
-
-      //quitamos el boton
-      $("#quitarProducto").remove();
-
-      //quitamos el producto del array
-      carrito.pop()
-
-      //mostramos el precio en la bolsa arriba a la derecha
-        //retiramos el numero anterior
-        $("#precioDeSuma").remove();
-
-          //mostramos el total arriba en la bolsita
-        $("#precioDeSuma").append(
-    
-        `
-        <h2 class="precioFinal" 
-                                style="margin-top:15px;
-                                margin-right:10px;">
-        $${total}
-        </h2>
-        `
-        );
-      
-    });
     
   })
   
@@ -195,7 +135,7 @@ $("#quieroPromo13x18").one( "click", function (e) {
 
 
 //registramos un solo click para que nos agregue una sola vez el texto deseado
-$( "#quieroPromo13x18" ).one( "click", function( event ) {
+$( "#quieroPromo13x18" ).click(function( event ) {
 
   //obtenemos el JSON
   $.get(URLproductos,function (response) {

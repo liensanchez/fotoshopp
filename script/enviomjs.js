@@ -46,7 +46,7 @@ $("#enviarMensaje").click(function (e) {
   let pedido = localStorage.getItem('texto');
 
   //HACEMOS EL MENSAJE DE WHATSAPP
-  let mensaje = 'send?phone='+telefono+'&text=Hola soy '+ nombre + ' mi correo es '+email+' les escribo porque ' + pedido
+  let mensaje = 'send?phone='+telefono+'&text=Hola soy '+ nombre + ' mi correo es '+email+' les escribo porque quiero' + pedido
   
   //SI ES UN CELULAR LO ENVIAMOS A LA APP
   if(isMobile()) {
