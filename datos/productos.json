@@ -107,6 +107,30 @@
       "producto":"quieroPromoPolaroidPapel",
       "precio":440,
       "texto":"una promo fotos en papel ilustracion"
+   },
+   {
+      "id":18,
+      "producto":"album25",
+      "precio":450,
+      "texto":"una album de 25 paginas"
+   },
+   {
+      "id":19,
+      "producto":"album50",
+      "precio":750,
+      "texto":"una album de 50 paginas"
+   },
+   {
+      "id":20,
+      "producto":"album75",
+      "precio":1050,
+      "texto":"una album de 75 paginas"
+   },
+   {
+      "id":21,
+      "producto":"album100",
+      "precio":1350,
+      "texto":"una album de 100 paginas"
    }
 
 ]

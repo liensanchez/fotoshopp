@@ -791,6 +791,7 @@ $("#quieroPromoPolaroidPapel" ).click(function( event ) {
   })
 
 });
+
 //ACCESORIOS
 
 //registramos click del boton el boton de cable de ihpone
@@ -1232,7 +1233,265 @@ $("#cargador" ).click(function( event ) {
   $.get(URLproductos,function (response) {
 
     //lo hacemos variable
-    let mensaje=JSON.stringify(response['productos'][10]['texto'])
+    let mensaje=JSON.stringify(response['productos'][12]['texto'])
+    
+    //ponemos el texto en el array
+    texto.push(mensaje);
+  })
+
+});
+
+//ALBUM
+
+
+//registramos click del boton el boton de album de 25 paginas
+$("#album25").click(function (e) { 
+
+  //evitamos que recargue
+  e.preventDefault();
+
+  //conseguimos el precio del archivo JSON
+  $.get(URLproductos,function (response) {
+
+    //lo hacemos variable para que pueda ser mostrado
+    let valor=JSON.stringify(response['productos'][18]['precio']);
+
+    //agregamos los precios a un carrito y lo parseamos porque esta como string
+    carrito.push(parseInt(valor));
+
+    //funcion para sumar los productos del array carrito
+    let total = carrito.reduce((a, b) => a + b, 0);
+
+
+    //retiramos el numero anterior de la bolsita 
+    $(".precioFinal").remove();
+    
+    //mostramos el total arriba en la bolsita
+    $("#precioDeSuma").append(
+    
+    `
+    <h2 class="precioFinal" 
+                          style="margin-top:15px;
+                                margin-right:10px;">
+    $${total}
+    </h2>
+    `
+    );
+    
+    //agregamos el producto al modal con el precio
+    $("#modalProductos").append(
+      
+      `
+      <h2 id="precioModal">Album 25 paginas $${valor}</h2> 
+      
+      `
+    );
+    
+  })
+  
+});
+
+
+//registramos un solo click para que nos agregue una sola vez el texto deseado
+$("#album25" ).click(function( event ) {
+
+  //obtenemos el JSON
+  $.get(URLproductos,function (response) {
+
+    //lo hacemos variable
+    let mensaje=JSON.stringify(response['productos'][18]['texto'])
+    
+    //ponemos el texto en el array
+    texto.push(mensaje);
+  })
+
+});
+
+
+//registramos click del boton el boton de album de 50 paginas
+$("#album50").click(function (e) { 
+
+  //evitamos que recargue
+  e.preventDefault();
+
+  //conseguimos el precio del archivo JSON
+  $.get(URLproductos,function (response) {
+
+    //lo hacemos variable para que pueda ser mostrado
+    let valor=JSON.stringify(response['productos'][19]['precio']);
+
+    //agregamos los precios a un carrito y lo parseamos porque esta como string
+    carrito.push(parseInt(valor));
+
+    //funcion para sumar los productos del array carrito
+    let total = carrito.reduce((a, b) => a + b, 0);
+
+
+    //retiramos el numero anterior de la bolsita 
+    $(".precioFinal").remove();
+    
+    //mostramos el total arriba en la bolsita
+    $("#precioDeSuma").append(
+    
+    `
+    <h2 class="precioFinal" 
+                          style="margin-top:15px;
+                                margin-right:10px;">
+    $${total}
+    </h2>
+    `
+    );
+    
+    //agregamos el producto al modal con el precio
+    $("#modalProductos").append(
+      
+      `
+      <h2 id="precioModal">Album 50 paginas $${valor}</h2> 
+      
+      `
+    );
+    
+  })
+  
+});
+
+
+//registramos un solo click para que nos agregue una sola vez el texto deseado
+$("#album50" ).click(function( event ) {
+
+  //obtenemos el JSON
+  $.get(URLproductos,function (response) {
+
+    //lo hacemos variable
+    let mensaje=JSON.stringify(response['productos'][19]['texto'])
+    
+    //ponemos el texto en el array
+    texto.push(mensaje);
+  })
+
+});
+
+
+//registramos click del boton el boton de album de 75 paginas
+$("#album75").click(function (e) { 
+
+  //evitamos que recargue
+  e.preventDefault();
+
+  //conseguimos el precio del archivo JSON
+  $.get(URLproductos,function (response) {
+
+    //lo hacemos variable para que pueda ser mostrado
+    let valor=JSON.stringify(response['productos'][20]['precio']);
+
+    //agregamos los precios a un carrito y lo parseamos porque esta como string
+    carrito.push(parseInt(valor));
+
+    //funcion para sumar los productos del array carrito
+    let total = carrito.reduce((a, b) => a + b, 0);
+
+
+    //retiramos el numero anterior de la bolsita 
+    $(".precioFinal").remove();
+    
+    //mostramos el total arriba en la bolsita
+    $("#precioDeSuma").append(
+    
+    `
+    <h2 class="precioFinal" 
+                          style="margin-top:15px;
+                                margin-right:10px;">
+    $${total}
+    </h2>
+    `
+    );
+    
+    //agregamos el producto al modal con el precio
+    $("#modalProductos").append(
+      
+      `
+      <h2 id="precioModal">Album 75 paginas $${valor}</h2> 
+      
+      `
+    );
+    
+  })
+  
+});
+
+
+//registramos un solo click para que nos agregue una sola vez el texto deseado
+$("#album75" ).click(function( event ) {
+
+  //obtenemos el JSON
+  $.get(URLproductos,function (response) {
+
+    //lo hacemos variable
+    let mensaje=JSON.stringify(response['productos'][20]['texto'])
+    
+    //ponemos el texto en el array
+    texto.push(mensaje);
+  })
+
+});
+
+
+//registramos click del boton el boton de album de 100 paginas
+$("#album100").click(function (e) { 
+
+  //evitamos que recargue
+  e.preventDefault();
+
+  //conseguimos el precio del archivo JSON
+  $.get(URLproductos,function (response) {
+
+    //lo hacemos variable para que pueda ser mostrado
+    let valor=JSON.stringify(response['productos'][21]['precio']);
+
+    //agregamos los precios a un carrito y lo parseamos porque esta como string
+    carrito.push(parseInt(valor));
+
+    //funcion para sumar los productos del array carrito
+    let total = carrito.reduce((a, b) => a + b, 0);
+
+
+    //retiramos el numero anterior de la bolsita 
+    $(".precioFinal").remove();
+    
+    //mostramos el total arriba en la bolsita
+    $("#precioDeSuma").append(
+    
+    `
+    <h2 class="precioFinal" 
+                          style="margin-top:15px;
+                                margin-right:10px;">
+    $${total}
+    </h2>
+    `
+    );
+    
+    //agregamos el producto al modal con el precio
+    $("#modalProductos").append(
+      
+      `
+      <h2 id="precioModal">Album 100 paginas $${valor}</h2> 
+      
+      `
+    );
+    
+  })
+  
+});
+
+
+//registramos un solo click para que nos agregue una sola vez el texto deseado
+$("#album100" ).click(function( event ) {
+
+  //obtenemos el JSON
+  $.get(URLproductos,function (response) {
+
+    //lo hacemos variable
+    let mensaje=JSON.stringify(response['productos'][21]['texto'])
     
     //ponemos el texto en el array
     texto.push(mensaje);
