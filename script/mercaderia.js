@@ -26,10 +26,10 @@ $("#buttonAccesorios").click(function (e) {
   e.preventDefault();
 
   //editamos la visibilidad de los objetos
-  $("#impresionFotografia").show();
+  $("#accesorios").show();
 
   //aplicamos css para mostrar las promociones
-  $("#impresionFotografia").css({
+  $("#accesorios").css({
     "display":"flex",
     "flex-direction":"row",
     "justify-content":"space-around",

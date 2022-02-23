@@ -174,7 +174,10 @@ background-color: black;
   }
 
 /*===============================================MERCADERIA==========================================================================*/
-#impresionFotografia{
+  #impresionFotografia{
+    display: none;    
+  }
+  #accesorios{
     display: none;    
   }
   .promo{
@@ -413,6 +416,9 @@ form{
     #impresionFotografia{
       display: none;    
     }
+    #accesorios{
+      display: none;    
+    }
     .promo{
       margin-top: 50px;
       width: 168px;
@@ -638,6 +644,9 @@ form{
   }
   /*===============================================MERCADERIA==========================================================================*/
   #impresionFotografia{
+    display: none;    
+  }
+  #accesorios{
     display: none;    
   }
   .promo{
