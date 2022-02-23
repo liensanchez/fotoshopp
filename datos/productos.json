@@ -1,40 +1,82 @@
 {"productos": [
    
    {
-      "id":1,
+      "id":0,
       "producto":"foto10x15",
       "precio":150,
       "texto":"una promo 10x15"
    },
    {
-      "id":2,
+      "id":1,
       "producto":"foto13x18",
       "precio":200,
       "texto":"una promo 13x18"
    },
    {
-      "id":3,
+      "id":2,
       "producto":"foto13x18",
       "precio":180,
       "texto":"una promo 13x18"
    },
    {
-      "id":4,
+      "id":3,
       "producto":"foto15x20",
       "precio":200,
       "texto":"una promo 15x20"
    },
    {
-      "id":5,
+      "id":4,
       "producto":"fotoCarnet",
-      "precio":150,
+      "precio":200,
       "texto":"una foto carnet"
    },
    {
-      "id":6,
+      "id":5,
       "producto":"fotoPolaroid",
-      "precio":150,
-     "texto":"una foto polaroid"
+      "precio":350,
+      "texto":"una foto polaroid"
+   },
+   {
+      "id":6,
+      "producto":"cableIph",
+      "precio":1500,
+      "texto":"una cable de iphone"
+   },
+   {
+      "id":7,
+      "producto":"cableIphC",
+      "precio":1500,
+      "texto":"una cable de iphone tipo c"
+   },
+   {
+      "id":8,
+      "producto":"cableSmgC",
+      "precio":1200,
+      "texto":"una cable samsung tipo c"
+   },
+   {
+      "id":9,
+      "producto":"cableSmgMicro",
+      "precio":900,
+      "texto":"una cable samsung micro usb"
+   },
+   {
+      "id":10,
+      "producto":"cargador20w",
+      "precio":2200,
+      "texto":"una cargador iphone tipo c"
+   },
+   {
+      "id":11,
+      "producto":"cargador5w",
+      "precio":1800,
+      "texto":"una cargador iphone "
+   },
+   {
+      "id":12,
+      "producto":"cargador",
+      "precio":1900,
+      "texto":"una cargador samsung"
    }
 ]
 }
