@@ -58,9 +58,12 @@ background-color: black;
   color: #FA0303;
 }
 .precioFinal{
+  margin-top: 5px;
   margin-right: 5px;
 }
-
+h2{
+  font-size: 9px;
+}
 /*==============================================NEGOCIO IMAGENES====================================================================*/
 .negocio{
   display: flex;
@@ -180,6 +183,9 @@ background-color: black;
   #accesorios{
     display: none;    
   }
+  #album{
+    display: none;
+  }
   .promo{
     margin-top: 50px;
     width: 168px;
@@ -198,6 +204,34 @@ background-color: black;
     margin-top: 50px;
     width: 168px;
     height: 196px;
+    background: rgb(255, 255, 255);
+    border-radius: 0.4em;
+    box-shadow: 0.3em 0.3em 0.7em #00000015;
+    border: rgb(250, 250, 250) 0.2em solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .promo3botones{
+    margin-top: 50px;
+    width: 168px;
+    height: 226px;
+    background: rgb(255, 255, 255);
+    border-radius: 0.4em;
+    box-shadow: 0.3em 0.3em 0.7em #00000015;
+    border: rgb(250, 250, 250) 0.2em solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .promo4botones{
+    margin-top: 50px;
+    width: 168px;
+    height: 236px;
     background: rgb(255, 255, 255);
     border-radius: 0.4em;
     box-shadow: 0.3em 0.3em 0.7em #00000015;
@@ -419,6 +453,9 @@ form{
     #accesorios{
       display: none;    
     }
+    #album{
+      display: none;
+    }
     .promo{
       margin-top: 50px;
       width: 168px;
@@ -437,6 +474,34 @@ form{
       margin-top: 50px;
       width: 168px;
       height: 196px;
+      background: rgb(255, 255, 255);
+      border-radius: 0.4em;
+      box-shadow: 0.3em 0.3em 0.7em #00000015;
+      border: rgb(250, 250, 250) 0.2em solid;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    .promo3botones{
+      margin-top: 50px;
+      width: 168px;
+      height: 226px;
+      background: rgb(255, 255, 255);
+      border-radius: 0.4em;
+      box-shadow: 0.3em 0.3em 0.7em #00000015;
+      border: rgb(250, 250, 250) 0.2em solid;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    .promo4botones{
+      margin-top: 50px;
+      width: 168px;
+      height: 236px;
       background: rgb(255, 255, 255);
       border-radius: 0.4em;
       box-shadow: 0.3em 0.3em 0.7em #00000015;
@@ -649,6 +714,9 @@ form{
   #accesorios{
     display: none;    
   }
+  #album{
+    display: none;
+  }
   .promo{
     margin-top: 50px;
     width: 270px;
@@ -666,6 +734,32 @@ form{
     margin-top: 50px;
     width: 270px;
     height: 360px;
+    background: rgb(255, 255, 255);
+    border-radius: 0.4em;
+    box-shadow: 0.3em 0.3em 0.7em #00000015;
+    border: rgb(250, 250, 250) 0.2em solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .promo3botones{
+    margin-top: 50px;
+    width: 270px;
+    height: 390px;
+    background: rgb(255, 255, 255);
+    border-radius: 0.4em;
+    box-shadow: 0.3em 0.3em 0.7em #00000015;
+    border: rgb(250, 250, 250) 0.2em solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .promo4botones{
+    margin-top: 50px;
+    width: 270px;
+    height: 400px;
     background: rgb(255, 255, 255);
     border-radius: 0.4em;
     box-shadow: 0.3em 0.3em 0.7em #00000015;

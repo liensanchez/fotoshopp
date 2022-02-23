@@ -19,8 +19,42 @@ $("#buttonImpresionFotografia").click(function (e) {
   $("#accesorios").css({
     "display":"none"
   });
+
+  //ocultanmos los albums
+  $("#album").css({
+    "display":"none"
+  });
 });
 
+
+//registramos el click
+$("#buttonAlbum").click(function (e) { 
+
+  //evitamos q recargue la web
+  e.preventDefault();
+
+  //editamos la visibilidad de los objetos
+  $("#album").show();
+
+  //aplicamos css para mostrar las promociones
+  $("#accesorios").css({
+    "display":"flex",
+    "flex-direction":"row",
+    "justify-content":"space-around",
+    "flex-wrap":"wrap"
+  })
+
+
+  //ocultamos las promos de fotografia
+  $("#impresionFotografia").css({
+    "display":"none"
+  });
+
+  //ocultanmos los accesorios
+  $("#accesorios").css({
+    "display":"none"
+  });
+});
 
 
 //registramos el click
@@ -43,6 +77,11 @@ $("#buttonAccesorios").click(function (e) {
 
   //ocultamos las promos de fotografia
   $("#impresionFotografia").css({
+    "display":"none"
+  });
+
+  //ocultanmos los albums
+  $("#album").css({
     "display":"none"
   });
 });
@@ -370,6 +409,134 @@ $("#quieroPromoCarnet" ).click(function( event ) {
 });
 
 
+//registramos click del boton en la promo de foto carnet
+$("#quieroPromoCarnet6").click(function (e) { 
+
+  //evitamos que recargue
+  e.preventDefault();
+
+  //conseguimos el precio del archivo JSON
+  $.get(URLproductos,function (response) {
+
+    //lo hacemos variable para que pueda ser mostrado
+    let valor=JSON.stringify(response['productos'][13]['precio']);
+
+    //agregamos los precios a un carrito y lo parseamos porque esta como string
+    carrito.push(parseInt(valor));
+
+    //funcion para sumar los productos del array carrito
+    let total = carrito.reduce((a, b) => a + b, 0);
+
+
+    //retiramos el numero anterior de la bolsita 
+    $(".precioFinal").remove();
+    
+    //mostramos el total arriba en la bolsita
+    $("#precioDeSuma").append(
+    
+    `
+    <h2 class="precioFinal" 
+                          style="margin-top:15px;
+                                margin-right:10px;">
+    $${total}
+    </h2>
+    `
+    );
+    
+    //agregamos el producto al modal con el precio
+    $("#modalProductos").append(
+      
+      `
+      <h2 id="precioModal">Una promo Carnet x6 $${valor}</h2> 
+      
+      `
+    );
+    
+  })
+  
+});
+
+
+//registramos un solo click para que nos agregue una sola vez el texto deseado
+$("#quieroPromoCarnet6" ).click(function( event ) {
+
+  //obtenemos el JSON
+  $.get(URLproductos,function (response) {
+
+    //lo hacemos variable
+    let mensaje=JSON.stringify(response['productos'][13]['texto'])
+    
+    //ponemos el texto en el array
+    texto.push(mensaje);
+  })
+
+});
+
+
+//registramos click del boton en la promo de foto pasaporte
+$("#quieroPromoPasaporte").click(function (e) { 
+
+  //evitamos que recargue
+  e.preventDefault();
+
+  //conseguimos el precio del archivo JSON
+  $.get(URLproductos,function (response) {
+
+    //lo hacemos variable para que pueda ser mostrado
+    let valor=JSON.stringify(response['productos'][14]['precio']);
+
+    //agregamos los precios a un carrito y lo parseamos porque esta como string
+    carrito.push(parseInt(valor));
+
+    //funcion para sumar los productos del array carrito
+    let total = carrito.reduce((a, b) => a + b, 0);
+
+
+    //retiramos el numero anterior de la bolsita 
+    $(".precioFinal").remove();
+    
+    //mostramos el total arriba en la bolsita
+    $("#precioDeSuma").append(
+    
+    `
+    <h2 class="precioFinal" 
+                          style="margin-top:15px;
+                                margin-right:10px;">
+    $${total}
+    </h2>
+    `
+    );
+    
+    //agregamos el producto al modal con el precio
+    $("#modalProductos").append(
+      
+      `
+      <h2 id="precioModal">Una promo pasaporte $${valor}</h2> 
+      
+      `
+    );
+    
+  })
+  
+});
+
+
+//registramos un solo click para que nos agregue una sola vez el texto deseado
+$("#quieroPromoPasaporte" ).click(function( event ) {
+
+  //obtenemos el JSON
+  $.get(URLproductos,function (response) {
+
+    //lo hacemos variable
+    let mensaje=JSON.stringify(response['productos'][14]['texto'])
+    
+    //ponemos el texto en el array
+    texto.push(mensaje);
+  })
+
+});
+
+
 //registramos click del boton en la promo de foto polaroid
 $("#quieroPromoPolaroid").click(function (e) { 
 
@@ -419,7 +586,7 @@ $("#quieroPromoPolaroid").click(function (e) {
 
 
 //registramos un solo click para que nos agregue una sola vez el texto deseado
-$("#quieroPromoCarnet" ).click(function( event ) {
+$("#quieroPromoPolaroid" ).click(function( event ) {
 
   //obtenemos el JSON
   $.get(URLproductos,function (response) {
@@ -433,6 +600,197 @@ $("#quieroPromoCarnet" ).click(function( event ) {
 
 });
 
+
+//registramos click del boton en la promo de foto polaroid x4
+$("#quieroPromoPolaroid4").click(function (e) { 
+
+  //evitamos que recargue
+  e.preventDefault();
+
+  //conseguimos el precio del archivo JSON
+  $.get(URLproductos,function (response) {
+
+    //lo hacemos variable para que pueda ser mostrado
+    let valor=JSON.stringify(response['productos'][15]['precio']);
+
+    //agregamos los precios a un carrito y lo parseamos porque esta como string
+    carrito.push(parseInt(valor));
+
+    //funcion para sumar los productos del array carrito
+    let total = carrito.reduce((a, b) => a + b, 0);
+
+
+    //retiramos el numero anterior de la bolsita 
+    $(".precioFinal").remove();
+    
+    //mostramos el total arriba en la bolsita
+    $("#precioDeSuma").append(
+    
+    `
+    <h2 class="precioFinal" 
+                          style="margin-top:15px;
+                                margin-right:10px;">
+    $${total}
+    </h2>
+    `
+    );
+    
+    //agregamos el producto al modal con el precio
+    $("#modalProductos").append(
+      
+      `
+      <h2 id="precioModal">Una promo Polaroid x4 $${valor}</h2> 
+      
+      `
+    );
+    
+  })
+  
+});
+
+
+//registramos un solo click para que nos agregue una sola vez el texto deseado
+$("#quieroPromoPolaroid4" ).click(function( event ) {
+
+  //obtenemos el JSON
+  $.get(URLproductos,function (response) {
+
+    //lo hacemos variable
+    let mensaje=JSON.stringify(response['productos'][15]['texto'])
+    
+    //ponemos el texto en el array
+    texto.push(mensaje);
+  })
+
+});
+
+
+//registramos click del boton en la promo de foto polaroid x 10
+$("#quieroPromoPolaroid10").click(function (e) { 
+
+  //evitamos que recargue
+  e.preventDefault();
+
+  //conseguimos el precio del archivo JSON
+  $.get(URLproductos,function (response) {
+
+    //lo hacemos variable para que pueda ser mostrado
+    let valor=JSON.stringify(response['productos'][16]['precio']);
+
+    //agregamos los precios a un carrito y lo parseamos porque esta como string
+    carrito.push(parseInt(valor));
+
+    //funcion para sumar los productos del array carrito
+    let total = carrito.reduce((a, b) => a + b, 0);
+
+
+    //retiramos el numero anterior de la bolsita 
+    $(".precioFinal").remove();
+    
+    //mostramos el total arriba en la bolsita
+    $("#precioDeSuma").append(
+    
+    `
+    <h2 class="precioFinal" 
+                          style="margin-top:15px;
+                                margin-right:10px;">
+    $${total}
+    </h2>
+    `
+    );
+    
+    //agregamos el producto al modal con el precio
+    $("#modalProductos").append(
+      
+      `
+      <h2 id="precioModal">Una promo Polaroid x10 $${valor}</h2> 
+      
+      `
+    );
+    
+  })
+  
+});
+
+
+//registramos un solo click para que nos agregue una sola vez el texto deseado
+$("#quieroPromoPolaroid10" ).click(function( event ) {
+
+  //obtenemos el JSON
+  $.get(URLproductos,function (response) {
+
+    //lo hacemos variable
+    let mensaje=JSON.stringify(response['productos'][16]['texto'])
+    
+    //ponemos el texto en el array
+    texto.push(mensaje);
+  })
+
+});
+
+
+//registramos click del boton en la promo de foto polaroid papel ilustracion
+$("#quieroPromoPolaroidPapel").click(function (e) { 
+
+  //evitamos que recargue
+  e.preventDefault();
+
+  //conseguimos el precio del archivo JSON
+  $.get(URLproductos,function (response) {
+
+    //lo hacemos variable para que pueda ser mostrado
+    let valor=JSON.stringify(response['productos'][17]['precio']);
+
+    //agregamos los precios a un carrito y lo parseamos porque esta como string
+    carrito.push(parseInt(valor));
+
+    //funcion para sumar los productos del array carrito
+    let total = carrito.reduce((a, b) => a + b, 0);
+
+
+    //retiramos el numero anterior de la bolsita 
+    $(".precioFinal").remove();
+    
+    //mostramos el total arriba en la bolsita
+    $("#precioDeSuma").append(
+    
+    `
+    <h2 class="precioFinal" 
+                          style="margin-top:15px;
+                                margin-right:10px;">
+    $${total}
+    </h2>
+    `
+    );
+    
+    //agregamos el producto al modal con el precio
+    $("#modalProductos").append(
+      
+      `
+      <h2 id="precioModal">Una promo Polaroid papel ilustracion $${valor}</h2> 
+      
+      `
+    );
+    
+  })
+  
+});
+
+
+//registramos un solo click para que nos agregue una sola vez el texto deseado
+$("#quieroPromoPolaroidPapel" ).click(function( event ) {
+
+  //obtenemos el JSON
+  $.get(URLproductos,function (response) {
+
+    //lo hacemos variable
+    let mensaje=JSON.stringify(response['productos'][17]['texto'])
+    
+    //ponemos el texto en el array
+    texto.push(mensaje);
+  })
+
+});
 //ACCESORIOS
 
 //registramos click del boton el boton de cable de ihpone

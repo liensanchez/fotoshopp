@@ -33,7 +33,7 @@
    {
       "id":5,
       "producto":"fotoPolaroid",
-      "precio":350,
+      "precio":250,
       "texto":"una foto polaroid"
    },
    {
@@ -77,6 +77,37 @@
       "producto":"cargador",
       "precio":1900,
       "texto":"una cargador samsung"
+   },
+   {
+      "id":13,
+      "producto":"quieroPromoCarnet6",
+      "precio":250,
+      "texto":"una 6 fotos carnet"
+   },
+   {
+      "id":14,
+      "producto":"quieroPromoPasaporte",
+      "precio":200,
+      "texto":"una promo fotos pasaporte"
+   },
+   {
+      "id":15,
+      "producto":"quieroPromoPolaroid4",
+      "precio":400,
+      "texto":"una promo 4 fotos polaroid"
+   },
+   {
+      "id":16,
+      "producto":"quieroPromoPolaroid10",
+      "precio":800,
+      "texto":"una promo 10 fotos polaroid"
+   },
+   {
+      "id":17,
+      "producto":"quieroPromoPolaroidPapel",
+      "precio":440,
+      "texto":"una promo fotos en papel ilustracion"
    }
+
 ]
 }
