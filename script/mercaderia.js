@@ -37,7 +37,7 @@ $("#buttonAlbum").click(function (e) {
   $("#album").show();
 
   //aplicamos css para mostrar las promociones
-  $("#accesorios").css({
+  $("#album").css({
     "display":"flex",
     "flex-direction":"row",
     "justify-content":"space-around",
