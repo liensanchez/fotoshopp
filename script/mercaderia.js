@@ -136,6 +136,19 @@ $("#quieroPromo10x15").click(function (e) {
     
   })
   
+
+  //mostramos el cartel de producto agregado
+  $(".contenedorConfirmacion").css({
+    "display":"flex"
+   })
+
+   //funcion para que desaparezca el cartel
+   setTimeout(function () {
+     $(".contenedorConfirmacion").fadeOut(1500);
+   })
+   ;
+
+  
 });
 
 
@@ -199,6 +212,18 @@ $("#quiero2Promo10x15").click(function (e) {
     
   })
   
+    //mostramos el cartel de producto agregado
+    $(".contenedorConfirmacion").css({
+      "display":"flex"
+     })
+  
+     //funcion para que desaparezca el cartel
+     setTimeout(function () {
+       $(".contenedorConfirmacion").fadeOut(1500);
+     })
+     ;
+  
+    
 });
 
 
@@ -263,6 +288,19 @@ $("#quieroPromo13x18").click(function (e) {
     
   })
   
+
+    //mostramos el cartel de producto agregado
+    $(".contenedorConfirmacion").css({
+      "display":"flex"
+     })
+  
+     //funcion para que desaparezca el cartel
+     setTimeout(function () {
+       $(".contenedorConfirmacion").fadeOut(1500);
+     })
+     ;
+  
+    
 });
 
 
@@ -326,6 +364,19 @@ $("#quieroPromo15x20").click(function (e) {
     
   })
   
+
+    //mostramos el cartel de producto agregado
+    $(".contenedorConfirmacion").css({
+      "display":"flex"
+     })
+  
+     //funcion para que desaparezca el cartel
+     setTimeout(function () {
+       $(".contenedorConfirmacion").fadeOut(1500);
+     })
+     ;
+  
+    
 });
 
 
@@ -390,6 +441,19 @@ $("#quieroPromoCarnet").click(function (e) {
     
   })
   
+
+    //mostramos el cartel de producto agregado
+    $(".contenedorConfirmacion").css({
+      "display":"flex"
+     })
+  
+     //funcion para que desaparezca el cartel
+     setTimeout(function () {
+       $(".contenedorConfirmacion").fadeOut(1500);
+     })
+     ;
+  
+    
 });
 
 
@@ -454,6 +518,19 @@ $("#quieroPromoCarnet6").click(function (e) {
     
   })
   
+
+    //mostramos el cartel de producto agregado
+    $(".contenedorConfirmacion").css({
+      "display":"flex"
+     })
+  
+     //funcion para que desaparezca el cartel
+     setTimeout(function () {
+       $(".contenedorConfirmacion").fadeOut(1500);
+     })
+     ;
+  
+    
 });
 
 
@@ -518,6 +595,19 @@ $("#quieroPromoPasaporte").click(function (e) {
     
   })
   
+
+    //mostramos el cartel de producto agregado
+    $(".contenedorConfirmacion").css({
+      "display":"flex"
+     })
+  
+     //funcion para que desaparezca el cartel
+     setTimeout(function () {
+       $(".contenedorConfirmacion").fadeOut(1500);
+     })
+     ;
+  
+    
 });
 
 
@@ -582,6 +672,19 @@ $("#quieroPromoPolaroid").click(function (e) {
     
   })
   
+
+    //mostramos el cartel de producto agregado
+    $(".contenedorConfirmacion").css({
+      "display":"flex"
+     })
+  
+     //funcion para que desaparezca el cartel
+     setTimeout(function () {
+       $(".contenedorConfirmacion").fadeOut(1500);
+     })
+     ;
+  
+    
 });
 
 
@@ -646,6 +749,19 @@ $("#quieroPromoPolaroid4").click(function (e) {
     
   })
   
+
+    //mostramos el cartel de producto agregado
+    $(".contenedorConfirmacion").css({
+      "display":"flex"
+     })
+  
+     //funcion para que desaparezca el cartel
+     setTimeout(function () {
+       $(".contenedorConfirmacion").fadeOut(1500);
+     })
+     ;
+  
+    
 });
 
 
@@ -710,6 +826,19 @@ $("#quieroPromoPolaroid10").click(function (e) {
     
   })
   
+
+    //mostramos el cartel de producto agregado
+    $(".contenedorConfirmacion").css({
+      "display":"flex"
+     })
+  
+     //funcion para que desaparezca el cartel
+     setTimeout(function () {
+       $(".contenedorConfirmacion").fadeOut(1500);
+     })
+     ;
+  
+    
 });
 
 
@@ -774,6 +903,19 @@ $("#quieroPromoPolaroidPapel").click(function (e) {
     
   })
   
+
+    //mostramos el cartel de producto agregado
+    $(".contenedorConfirmacion").css({
+      "display":"flex"
+     })
+  
+     //funcion para que desaparezca el cartel
+     setTimeout(function () {
+       $(".contenedorConfirmacion").fadeOut(1500);
+     })
+     ;
+  
+    
 });
 
 
@@ -839,6 +981,19 @@ $("#cableIph").click(function (e) {
     
   })
   
+
+    //mostramos el cartel de producto agregado
+    $(".contenedorConfirmacion").css({
+      "display":"flex"
+     })
+  
+     //funcion para que desaparezca el cartel
+     setTimeout(function () {
+       $(".contenedorConfirmacion").fadeOut(1500);
+     })
+     ;
+  
+    
 });
 
 
@@ -903,6 +1058,19 @@ $("#cableIphC").click(function (e) {
     
   })
   
+
+    //mostramos el cartel de producto agregado
+    $(".contenedorConfirmacion").css({
+      "display":"flex"
+     })
+  
+     //funcion para que desaparezca el cartel
+     setTimeout(function () {
+       $(".contenedorConfirmacion").fadeOut(1500);
+     })
+     ;
+  
+    
 });
 
 
@@ -967,6 +1135,19 @@ $("#cableSmgC").click(function (e) {
     
   })
   
+
+    //mostramos el cartel de producto agregado
+    $(".contenedorConfirmacion").css({
+      "display":"flex"
+     })
+  
+     //funcion para que desaparezca el cartel
+     setTimeout(function () {
+       $(".contenedorConfirmacion").fadeOut(1500);
+     })
+     ;
+  
+    
 });
 
 
@@ -1031,6 +1212,19 @@ $("#cableSmgMicro").click(function (e) {
     
   })
   
+
+    //mostramos el cartel de producto agregado
+    $(".contenedorConfirmacion").css({
+      "display":"flex"
+     })
+  
+     //funcion para que desaparezca el cartel
+     setTimeout(function () {
+       $(".contenedorConfirmacion").fadeOut(1500);
+     })
+     ;
+  
+    
 });
 
 
@@ -1095,6 +1289,19 @@ $("#cargador20w").click(function (e) {
     
   })
   
+
+    //mostramos el cartel de producto agregado
+    $(".contenedorConfirmacion").css({
+      "display":"flex"
+     })
+  
+     //funcion para que desaparezca el cartel
+     setTimeout(function () {
+       $(".contenedorConfirmacion").fadeOut(1500);
+     })
+     ;
+  
+    
 });
 
 
@@ -1159,6 +1366,19 @@ $("#cargador5w").click(function (e) {
     
   })
   
+
+    //mostramos el cartel de producto agregado
+    $(".contenedorConfirmacion").css({
+      "display":"flex"
+     })
+  
+     //funcion para que desaparezca el cartel
+     setTimeout(function () {
+       $(".contenedorConfirmacion").fadeOut(1500);
+     })
+     ;
+  
+    
 });
 
 
@@ -1223,6 +1443,19 @@ $("#cargador").click(function (e) {
     
   })
   
+
+    //mostramos el cartel de producto agregado
+    $(".contenedorConfirmacion").css({
+      "display":"flex"
+     })
+  
+     //funcion para que desaparezca el cartel
+     setTimeout(function () {
+       $(".contenedorConfirmacion").fadeOut(1500);
+     })
+     ;
+  
+    
 });
 
 
@@ -1289,6 +1522,19 @@ $("#album25").click(function (e) {
     
   })
   
+
+    //mostramos el cartel de producto agregado
+    $(".contenedorConfirmacion").css({
+      "display":"flex"
+     })
+  
+     //funcion para que desaparezca el cartel
+     setTimeout(function () {
+       $(".contenedorConfirmacion").fadeOut(1500);
+     })
+     ;
+  
+    
 });
 
 
@@ -1353,6 +1599,19 @@ $("#album50").click(function (e) {
     
   })
   
+
+    //mostramos el cartel de producto agregado
+    $(".contenedorConfirmacion").css({
+      "display":"flex"
+     })
+  
+     //funcion para que desaparezca el cartel
+     setTimeout(function () {
+       $(".contenedorConfirmacion").fadeOut(1500);
+     })
+     ;
+  
+    
 });
 
 
@@ -1417,6 +1676,19 @@ $("#album75").click(function (e) {
     
   })
   
+
+    //mostramos el cartel de producto agregado
+    $(".contenedorConfirmacion").css({
+      "display":"flex"
+     })
+  
+     //funcion para que desaparezca el cartel
+     setTimeout(function () {
+       $(".contenedorConfirmacion").fadeOut(1500);
+     })
+     ;
+  
+    
 });
 
 
@@ -1481,6 +1753,19 @@ $("#album100").click(function (e) {
     
   })
   
+
+    //mostramos el cartel de producto agregado
+    $(".contenedorConfirmacion").css({
+      "display":"flex"
+     })
+  
+     //funcion para que desaparezca el cartel
+     setTimeout(function () {
+       $(".contenedorConfirmacion").fadeOut(1500);
+     })
+     ;
+  
+    
 });
 
 

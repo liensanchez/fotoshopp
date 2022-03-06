@@ -20,6 +20,26 @@ $(".cerrar").click(function () {
   
 });
 
+
+//funcion del boton scroll
+mybutton = document.getElementById("scroll");
+
+// cuando el usuario baja 20px aparece el boton
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// cuando el usuario cliquea el boton sube 
+function topFunction() {
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
 //carrito  para sumar los productos
 var carrito=[];
 
